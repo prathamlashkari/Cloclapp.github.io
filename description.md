@@ -1,0 +1,1 @@
+In this project i created a clock app usign html , css and js.It perform simple function like watch time add alarm and add timmer ,it contain a stopwatch with some funny sound i try to make i more attractive and funny 

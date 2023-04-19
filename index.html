@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/a704c22ef8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Making the navigation bar -->
+    <div class="navcontain">
+        <div class="logo"><img src="./img_sou/logo.png" alt="">
+        </div>
+        <div class="clock">
+            <img src="./img_sou/clockicon.png" class="iconimg" alt="">
+            <p>Clock</p>
+        </div>
+        <div class="Alarm"> <img src="./img_sou/alarm.png" class="iconimg" alt="">
+            <p>Alarm</p>
+        </div>
+        <div class="Stopwatch"><img src="./img_sou/stop.png" class="iconimg" alt="">
+            <p>Timmer</p>
+        </div>
+        <div class="Timmer "> <img src="./img_sou/stopicon.png" class="iconimg" alt="">
+            <p>Stopwatch</p>
+        </div>
+    </div>
+
+    <!-- Making the clock  -->
+    <div class="wholebody">
+
+        <div id="clockcontainer">
+            <div class="hour"></div>
+            <div class="min"></div>
+            <div class="sec"></div>
+        </div>
+        <div class="digitalclock">
+            <div class="hours">00</div>
+            <div class="minutes">00</div>
+            <div class="second">00</div>
+            <div class="ampm">am</div>
+        </div>
+    </div>
+
+    <div class="whole-alarm">
+        <!-- Making the Alarm clock  -->
+        <div class="alarm-container offclock">
+            <div class="time">00:00:00</div>
+            <div class="inputs">
+                <input type="number" placeholder="00" id="ghante" min="0" max="23">
+                <input type="number" placeholder="00" id="minute" min="0" max="59">
+            </div>
+            <button id="alarmbtn">Set alarm</button>
+            <div class="activealarm"></div>
+        </div>
+
+        <!-- Making the Timmer -->
+        <div class="timmer-container offclock">
+            <div class="timmer-status">Set Timmer</div>
+            <form action="#">
+                <input type="number" id="timmer-hour" placeholder="Hour" autocomplete="off" value="">
+                <input type="number" id="timmer-min" placeholder="Min" autocomplete="off" value="">
+                <input type="number" id="timmer-sec" placeholder="Sec" autocomplete="off" value="">
+            </form>
+            <div class="timmer-btn">
+                <button id="start">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+        <!-- Making the stopwatch -->
+        <div class="stopwatch-container offclock">
+            <div class="stopwatch-status">Stop Watch</div>
+            <div class="stopwatch">
+                <span class="stopmin">00</span><span>:</span>
+                <span class="stopsec">00</span><span>:</span>
+                <span class="stopmsec">00</span>
+            </div>
+            <div class="stop-btn">
+                <button id="stop-start">Start</button>
+                <button id="stop-stop">Stop</button>
+                <button id="stop-reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

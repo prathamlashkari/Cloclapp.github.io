@@ -1,0 +1,640 @@
+/* container nav styling */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&family=Libre+Baskerville&family=Orbitron&family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.navcontain {
+  background: rgba(29, 32, 204, 0.718);
+  height: 14vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 5vw;
+}
+
+.logo img {
+  height: 68px;
+  width: 100px;
+}
+
+
+.clock {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Alarm {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.Timmer {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.Stopwatch {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+
+}
+
+/* icon styles */
+.iconimg {
+  height: 30px;
+}
+
+/* Now designing for the clock */
+
+#clockcontainer {
+  position: relative;
+  margin: auto;
+  height: 30vw;
+  width: 30vw;
+  background: url(/img_sou/analog.png) no-repeat;
+  background-size: 100%;
+}
+
+.hour,
+.min,
+.sec {
+  position: absolute;
+  transform-origin: bottom;
+}
+
+.hour {
+  width: 1%;
+  height: 16%;
+  left: 49.65%;
+  top: 35%;
+  background: greenyellow;
+  border-radius: 5px;
+}
+
+.min {
+  width: 1%;
+  height: 24%;
+  left: 49.75%;
+  top: 27%;
+  border-radius: 10px;
+  background: rgb(255, 68, 47);
+}
+
+.sec {
+  width: 1%;
+  height: 28%;
+  left: 49.76%;
+  top: 23%;
+  border-radius: 10px;
+  background: rgb(9, 58, 238);
+}
+
+.wholebody {
+  background-color: #020203ed;
+  height: 100vh;
+}
+
+/* styling for digital clock */
+
+.digitalclock {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+  align-items: center;
+  height: 6vw;
+  column-gap: 4vw;
+}
+
+.hours {
+  color: red;
+  font-size: 4vw;
+  box-shadow: 1px 2px 18px 3px #ed4444e8;
+
+}
+
+.minutes {
+  color: rgb(24, 218, 24);
+  font-size: 4vw;
+  box-shadow: 1px 2px 18px 3px #30f13ce8;
+
+}
+
+.second {
+  color: rgb(225, 225, 24);
+  font-size: 4vw;
+  box-shadow: 1px 2px 18px 3px #fae5928c;
+}
+
+.ampm {
+  font-weight: bold;
+  color: rgb(17, 157, 222);
+  font-size: 3vw;
+}
+
+/* media qureies */
+@media only screen and (max-width: 492px) and (min-width:300px) {
+  .navcontain {
+    height: 10vh;
+    column-gap: 4vw;
+  }
+
+  .logo img {
+    height: 50px;
+    width: 60px;
+  }
+
+  .clock {
+    width: 50px;
+    font-size: 12px;
+
+  }
+
+  .Alarm {
+    width: 50px;
+    font-size: 12px;
+  }
+
+  .iconimg {
+    height: 25px;
+  }
+
+  .Timmer {
+    width: 50px;
+    font-size: 12px;
+  }
+
+  .Stopwatch {
+    width: 59px;
+    font-size: 12px;
+  }
+
+  #clockcontainer {
+    height: 70vw;
+    width: 70vw;
+  }
+
+  .hours {
+    font-size: 8vw;
+  }
+
+  .minutes {
+    font-size: 8vw;
+  }
+
+  .second {
+    font-size: 8vw;
+  }
+
+  .ampm {
+
+    font-size: 5vw;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) and (min-width:498px) {
+  #clockcontainer {
+    height: 50vw;
+    width: 50vw;
+  }
+
+  .navcontain {
+    height: 10vh;
+    column-gap: 4vw;
+  }
+}
+
+/* End of clock */
+
+.iconsclick {
+  background-color: rgb(146, 146, 239);
+  border-radius: 25px;
+}
+
+
+/* Alarm clock styling  */
+
+.whole-alarm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #020203ed;
+  height: 86vh;
+}
+
+.alarm-container {
+  height: 50vh;
+  width: 40vw;
+  background: #5947d7;
+  ;
+  margin-bottom: 100px;
+  border-radius: 40px;
+}
+
+.time {
+  margin-top: 10px;
+  font-size: 2.18em;
+  text-align: center;
+  color: #eff709;
+  ;
+  font-family: "Roboto Mono", monospace;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.8em;
+  gap: 2em;
+}
+
+.inputs input {
+  width: 50px;
+  font-size: 1.4em;
+  border: 1px solid #000000;
+  border-radius: 0.6em;
+  padding: 0.2em 0.2em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#alarmbtn {
+  background-color: #110404;
+  border: none;
+  padding: 0.9em 1.5em;
+  display: block;
+  margin: 2em auto 0 auto;
+  border-radius: 10em;
+  color: #10f11f;
+}
+
+.alarm {
+  display: grid;
+  grid-template-columns: 8fr 0fr 0fr;
+  gap: 1em;
+  margin: 10px auto;
+  align-items: center;
+  border-bottom: 1px solid #898f9b;
+  padding-bottom: 0.6em;
+}
+
+.activealarm {
+  background: #ff6262db;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.deleteButton {
+  background-color: transparent;
+  font-size: 1em;
+  color: #01040a;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 492px) and (min-width:300px) {
+  .alarm-container {
+    width: 60vw;
+  }
+}
+
+
+
+/* CSs for the timmer  */
+
+.timmer-container {
+  height: 50vh;
+  width: 40vw;
+  /* background: #5947d7; */
+  margin-bottom: 100px;
+  border-radius: 40px;
+}
+
+.timmer-status {
+  margin-top: 10px;
+  font-size: 2.18em;
+  text-align: center;
+  color: #eff709;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif
+}
+
+.timmer-container form {
+  height: 25vh;
+  line-height: 26vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+
+}
+
+.timmer-container form input {
+
+  border: none;
+  outline: none;
+  width: 130px;
+  font-size: 30px;
+  text-align: center;
+  background: none;
+  color: red;
+  border-bottom: 2px solid #e8e518;
+  border-top: 2px solid yellow;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Roboto', sans-serif
+}
+
+.timmer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  gap: 15vh;
+}
+
+#start {
+  height: 4vh;
+  width: 4vw;
+  background: none;
+  border: none;
+  color: yellow;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#start {
+  box-shadow: 0px 0px 20px 10px #3fafeb;
+  animation: shadows 1.5s infinite;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: #48abe0 0 0 10px;
+    box-shadow: 0px 0px 20px 10px #48abe0;
+  }
+
+  50% {
+    text-shadow: blueviolet 0 0 10px;
+    box-shadow: 0px 0px 20px 10px blueviolet;
+  }
+
+  75% {
+    text-shadow: rebeccapurple 0 0 10px;
+    box-shadow: 0px 0px 20px 10px rebeccapuprle;
+  }
+
+  100% {
+    text-shadow: #48abe0 0 0 10px;
+    box-shadow: 0px 0px 20px 10px #48abe0;
+  }
+}
+
+#reset {
+  height: 4vh;
+  width: 4vw;
+  background: none;
+  border: none;
+  color: yellow;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+#reset {
+  box-shadow: 0px 0px 20px 10px #48abe0;
+  animation: shadows 1.5s infinite;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: #48abe0 0 0 10px;
+    box-shadow: 0px 0px 20px 10px #48abe0;
+  }
+
+  50% {
+    text-shadow: blueviolet 0 0 10px;
+    box-shadow: 0px 0px 20px 10px blueviolet;
+  }
+
+  75% {
+    text-shadow: rebeccapurple 0 0 10px;
+    box-shadow: 0px 0px 20px 10px rebeccapuprle;
+  }
+
+  100% {
+    text-shadow: #48abe0 0 0 10px;
+    box-shadow: 0px 0px 20px 10px #48abe0;
+  }
+}
+
+/* timmer responsiveness  */
+@media only screen and (max-width: 1335px) and (min-width:500px) {
+  #start {
+    width: 10vh;
+  }
+
+  #reset {
+    width: 10vh;
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-width:300px) {
+  #start {
+    width: 10vh;
+  }
+
+  #reset {
+    width: 10vh;
+  }
+
+  .timmer-status {
+    font-size: 1.5em;
+  }
+
+  .timmer-container form input {
+
+    width: 90px;
+    font-size: 25px;
+  }
+
+  .timmer-btn {
+    gap: 13vh;
+  }
+
+  .whole-alarm {
+    height: 90vh;
+  }
+}
+
+/* Styling the stop watch */
+
+
+.stopwatch-container {
+  height: 50vh;
+  width: 25vw;
+  background: #383ac4;
+  margin-bottom: 100px;
+  border-radius: 146px;
+}
+
+.stopwatch-status {
+  margin-top: 10px;
+  font-size: 2.18em;
+  text-align: center;
+  color: #eff709;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif
+}
+
+.stopwatch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 25vw;
+  gap: 0.4em;
+  color: #ffffffd1;
+  font-size: 2.5em;
+  margin-top: 17px;
+}
+
+.stop-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11vh;
+  gap: 2em;
+  width: 25vw;
+}
+
+#stop-start {
+  border: none;
+  background: #63cb6e;
+  border-radius: 14px;
+  outline: none;
+  height: 34px;
+  width: 59px;
+  color: #0312f1;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#stop-stop {
+  border: none;
+  background: #63cb6e;
+  border-radius: 14px;
+  outline: none;
+  height: 34px;
+  width: 59px;
+  color: #0312f1;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#stop-reset {
+  border: none;
+  background: #63cb6e;
+  border-radius: 14px;
+  outline: none;
+  height: 34px;
+  width: 59px;
+  color: #0312f1;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) and (min-width:300px) {
+  .stopwatch-container {
+    width: 75vw;
+  }
+
+  .stopwatch {
+    width: 75vw;
+  }
+
+  .stop-btn {
+    width: 75vw;
+  }
+
+  .stopwatch-status {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width:700px) {
+  .stopwatch-container {
+    width: 35vw;
+  }
+
+  .stopwatch {
+    width: 35vw;
+  }
+
+  .stop-btn {
+    width: 35vw;
+  }
+
+  .stopwatch-status {
+    margin-top: 36px;
+    font-size: 1.5em;
+
+  }
+}
+
+/* off displays  */
+.offclock {
+  display: none;
+}
+
+.offalarm {
+  display: none;
+}
+
+.offtimmmer {
+  display: none;
+}
+
+.offstopwatch {
+  display: none;
+}
+
+.navbackground {
+  background: #2c387b;
+  color: #d9b4b4;
+}
